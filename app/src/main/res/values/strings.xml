@@ -1,0 +1,30 @@
+<resources>
+    <!--  text  -->
+    <string name="txt_card_title">Cards</string>
+    <string name="txt_add_card">Adicionar card</string>
+    <string name="txt_title_add_card">Criar card</string>
+    <!--  Labels hint Inputs  -->
+    <string name="hint_name_add">Nome</string>
+    <string name="hint_company_add">Empresa</string>
+    <string name="hint_email_add">email</string>
+    <string name="hint_phone_add">Telefone</string>
+    <string name="hint_color_picker">#FFFFBF</string>
+    <!--  Labels Buttons  -->
+    <string name="label_button_cancel_card">Cancelar</string>
+    <string name="label_button_create_card">Criar Card</string>
+    <string name="label_button_update_card">Atualizar</string>
+    <string name="action_picker_color">cor do cartão</string>
+    <string name="action_picker_color_txt">cor do texto</string>
+    <string name="action_edit_title">Editar</string>
+    <string name="action_delete_title">Excluir</string>
+    <!--  messages  -->
+    <string name="label_you_dont_have_Cards">Ops! Você não possui\nnenhum card</string>
+    <string name="label_new_card_success">Card criado com sucesso!</string>
+    <string name="label_update_card_success">Card Atualizado com sucesso!</string>
+    <string name="label_field_mandatory">Campo Obrigatório!</string>
+    <!--  Labels filters  -->
+    <string name="label_all_cards_by_date_desc"></string>
+    <string name="label_cards_filtered_by_date">. %1$s .</string>
+    <string name="label_loading">carregando...</string>
+    <string name="cor_do_texto">cor do texto</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  text  -->
+    <string name="txt_card_title">Cards</string>
+    <string name="txt_add_card">Add Card</string>
+    <string name="txt_title_add_card">Create Card</string>
+    <!--  Labels hint Inputs  -->
+    <string name="hint_name_add">Name</string>
+    <string name="hint_company_add">Company</string>
+    <string name="hint_email_add">Email</string>
+    <string name="hint_phone_add">Phone</string>
+    <string name="hint_color_picker">#FFFFBF</string>
+    <!--  Labels Buttons  -->
+    <string name="label_button_cancel_card">Cancel</string>
+    <string name="label_button_create_card">Create Card</string>
+    <string name="label_button_update_card">Update</string>
+    <string name="action_picker_color">Card Color</string>
+    <string name="action_picker_color_txt">Text Color</string>
+    <string name="action_edit_title">Edit</string>
+    <string name="action_delete_title">Delete</string>
+    <!--  messages  -->
+    <string name="label_you_dont_have_Cards">Oops! you dont have \n no card</string>
+    <string name="label_new_card_success">Card created successfully!</string>
+    <string name="label_update_card_success">Card successfully updated!</string>
+    <string name="label_field_mandatory">Required field!</string>
+    <!--  Labels filters  -->
+    <string name="label_all_cards_by_date_desc"></string>
+    <string name="label_cards_filtered_by_date">. %1$s .</string>
+    <string name="label_loading">loading...</string>
+    <string name="cor_do_texto">Text Color</string>
+</resources>

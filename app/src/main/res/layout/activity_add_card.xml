@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+// toolbar
+<com.google.android.material.appbar.MaterialToolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:navigationIcon="@drawable/ic_back"
+    app:title="@string/txt_title_add_card" />
+
+// Guides Line
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guide_start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_begin="32dp" />
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guide_end"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_end="32dp" />
+
+// title add
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/til_name"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hint="@string/hint_name_add"
+    app:layout_constraintEnd_toEndOf="@+id/guide_end"
+    app:layout_constraintStart_toStartOf="@+id/guide_start"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar"
+    app:startIconDrawable="@drawable/ic_person">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+// company add
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/til_company"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hint="@string/hint_company_add"
+    app:layout_constraintEnd_toEndOf="@+id/guide_end"
+    app:layout_constraintStart_toStartOf="@+id/guide_start"
+    app:layout_constraintTop_toBottomOf="@+id/til_name"
+    app:startIconDrawable="@drawable/ic_company">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+//phone
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/til_phone"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hint="@string/hint_phone_add"
+    app:layout_constraintEnd_toStartOf="@+id/guide_end"
+    app:layout_constraintStart_toStartOf="@+id/guide_start"
+    app:layout_constraintTop_toBottomOf="@id/til_company"
+    app:startIconDrawable="@drawable/ic_phone">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|phone" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+// email
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/til_email"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hint="@string/hint_email_add"
+    app:layout_constraintEnd_toStartOf="@+id/guide_end"
+    app:layout_constraintStart_toStartOf="@+id/guide_start"
+    app:layout_constraintTop_toBottomOf="@+id/til_phone"
+    app:startIconDrawable="@drawable/ic_email">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    // button create task
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_new_card"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:text="@string/label_button_create_card"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_add_task"
+        app:layout_constraintEnd_toStartOf="@+id/guide_end"
+        app:layout_constraintTop_toTopOf="@+id/btn_cancel_card"
+        app:cornerRadius="20dp"/>
+
+    // button Cancel task
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel_card"
+
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/label_button_cancel_card"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_back_close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_new_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cornerRadius="20dp"/>
+
+    // button Picker color
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_picker_color"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/action_picker_color"
+        android:textAllCaps="false"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_color"
+        app:layout_constraintEnd_toStartOf="@+id/guide_end"
+        app:layout_constraintStart_toStartOf="@+id/guide_start"
+        app:layout_constraintTop_toTopOf="@+id/divider" />
+
+    // divider
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_email" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_color"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:hint="@string/hint_color_picker"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guide_end"
+        app:layout_constraintStart_toStartOf="@+id/guide_start"
+        app:layout_constraintTop_toTopOf="@+id/divider">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_color_txt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:hint="@string/hint_color_picker"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guide_end"
+        app:layout_constraintStart_toStartOf="@+id/guide_start"
+        app:layout_constraintTop_toTopOf="@+id/divider">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/cor_do_texto"
+        android:checked="false"
+        app:layout_constraintEnd_toStartOf="@+id/guide_end"
+        app:layout_constraintStart_toStartOf="@+id/guide_start"
+        app:layout_constraintTop_toBottomOf="@+id/btn_picker_color" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_picker_color"
+        app:layout_constraintEnd_toStartOf="@+id/guide_end"
+        app:layout_constraintTop_toTopOf="@+id/btn_picker_color"
+        app:srcCompat="@drawable/selected_dots_color" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/switch1"
+        app:layout_constraintEnd_toStartOf="@+id/guide_end"
+        app:layout_constraintTop_toTopOf="@+id/switch1"
+        app:srcCompat="@drawable/selected_dots_color" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
