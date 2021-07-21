@@ -29,7 +29,7 @@
 ## Descrição do projeto 
 
 <p align="justify">
-  O bobjetivo do projeto é criar uma aplicação para gerar o seu próprio cartão de visitas pessoal, usando padrões de projeto e boas práticas de programação Kotlin. Tecnicamente, foi desenvolvido um App Android nativo para a criação e listagem dos cartões, os quais podem ter os seguintes dados: nome, empresa, telefone de contato, email e cor de fundo. Tudo isso utilizando o Room para armazenar os dados localmente.
+  O objetivo do projeto é criar uma aplicação para gerar o seu próprio cartão de visitas pessoal, usando padrões de projeto e boas práticas de programação Kotlin. Tecnicamente, foi desenvolvido um App Android nativo para a criação e listagem dos cartões, os quais podem ter os seguintes dados: nome, empresa, telefone de contato, email e cor de fundo. Tudo isso utilizando o Room para armazenar os dados localmente.
 Por fim, o desafiado é entregar seu próprio projeto, incorporando as próprias evoluções e melhorias!
 </p>
 
